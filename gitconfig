@@ -15,7 +15,5 @@
 	user = jasonamyers
 [push]
 	default = simple
-[init]
-	templatedir = ~/.git_template
 [pull]
 	ff = only
