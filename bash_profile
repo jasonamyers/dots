@@ -7,10 +7,8 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:$HOME/.local/bin:$HOME/bin
-
-export PATH
-export PATH="$HOME/.pyenv/bin:$PATH"
-export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
