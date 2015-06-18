@@ -1,4 +1,6 @@
 #!/bin/bash
+echo -e "\n>> Installing liquidprompt"
+git clone https://github.com/nojhan/liquidprompt.git ~/liquidprompt
 
 # Init symlinks for config files
 echo -e "\n>> Creating symlinks"
@@ -17,3 +19,15 @@ for file in [a-zA-Z]* ; do
         ln -s `pwd`/"$file" ~/."$file" && echo "  Linked ~/.$file to `pwd`/$file" || echo "  Couldn't link ~/.$file to `pwd`/$file!"
     fi
 done
+
+echo -e "\n>> Setting up Vundle"
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+echo -e "\n>> Installing VIM Plugins"
+vim +PluginInstall +qall
+
+echo -e "\n>> Installing Jedi"
+cd ~/.vim/bundle/jedi-vim
+git submodule init
+git submodule update
+
