@@ -1,7 +1,7 @@
 # .bashrc
 
 # User specific aliases and functions
-alias ls='ls -G'  
+alias ls='ls -G --color'
 alias ll='ls -hlatr --color'
 alias gg='history | grep'
 alias breakitdown="history | awk '{a[$2]++ } END{for(i in a){print a[i] ' ' i}}'|sort -rn |head -n 20"
@@ -16,8 +16,15 @@ alias pmdb='python manage.py dbshell'
 # Only load Liquid Prompt in interactive shells, not from a script or from scp
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
-# Setup bash history 
+# Setup bash history
 export HISTSIZE=100000
 export HISTFILESIZE=100000
 export HISTCONTROL=ignoreboth
 export HISTIGNORE="&:[ ]*:ls:ll:la:l:cd:pwd:exit:mc:su:df:clear"
+
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+pyenv virtualenvwrapper
