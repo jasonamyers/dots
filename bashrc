@@ -1,8 +1,8 @@
 # .bashrc
 
 # User specific aliases and functions
-alias ls='ls -G --color'
-alias ll='ls -hlatr --color'
+alias ls='ls -G'
+alias ll='ls -hlatr'
 alias gg='history | grep'
 alias breakitdown="history | awk '{a[$2]++ } END{for(i in a){print a[i] ' ' i}}'|sort -rn |head -n 20"
 alias cleanpyc='find . -type f -name "*.pyc" -delete'
@@ -28,3 +28,6 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 pyenv virtualenvwrapper
+
+export NVM_DIR="/Users/jasomyer/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

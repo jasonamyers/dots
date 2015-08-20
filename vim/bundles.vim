@@ -146,6 +146,10 @@ Plugin 'acustodioo/vim-tmux.git'
 " Syntax highlighting for Scala files
 Plugin 'derekwyatt/vim-scala.git'
 
+" Elixir:
+" Syntax highlighting for Elixir riles
+Plugin 'elixir-lang/vim-elixir'
+
 " Themes And Appearance:
 " Colorsheme Scroller, Chooser, and Browser
 Plugin 'vim-scripts/ScrollColors.git'
@@ -164,6 +168,9 @@ Plugin 'chriskempson/base16-vim'
 
 " More colorschemes
 Plugin 'daylerees/colour-schemes'
+
+" Papercolor theme
+Plugin 'NLKNguyen/papercolor-theme'
 
 call vundle#end()
 filetype plugin indent on

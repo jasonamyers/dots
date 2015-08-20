@@ -46,7 +46,7 @@ set t_Co=256                              " Tell The Term To Use 256 Colors
 set visualbell                            " Use Screen Flash Instead Of Beep
 set errorbells                            " Flash Screen For Errors
 set background=dark                       " The power of the Dark Side
-colorscheme jellybeans                    " Default Color Scheme
+colorscheme PaperColor-Dark               " Default Color Scheme
 set linespace=3                           " A Little Extra Height For Lines:
 
 set showbreak=↪                           " Make Line Wraps More Noticeable:
@@ -98,7 +98,7 @@ set shiftround                            " Round indent by a multiple of shiftw
 set cpoptions+=I                          " Do Not Remove Empty Tabs:
 
 " Line Numbers:
-set nonumber                                " Enable line numbers
+set nonumber                              " Enable line numbers
 set numberwidth=4                         " Set line number column width
 
 " Window And Buffer Management:
@@ -187,4 +187,6 @@ set nostartofline                         " Keep Cursor In Same Column When Scro
 set cpoptions+=qI                         " Do Not Move Cursor When Joining Multiple Lines
 
 highlight ColorColumn ctermbg=magenta     " Set your highlight color
-call matchadd('ColorColumn', '\%81v', 100)" Hightlight column 81 on each line if a char is there
+call matchadd('ColorColumn', '\%81v', 100)" Hightlight column 80 on each line if a char is there
+
+let python_highlight_all = 1
