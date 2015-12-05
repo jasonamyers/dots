@@ -9,6 +9,10 @@ alias cleanpyc='find . -type f -name "*.pyc" -delete'
 alias pms='python manage.py runserver'
 alias pmsh='python manage.py shell'
 alias pmdb='python manage.py dbshell'
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
+alias vim='emacsclient -t'
+alias vi='emacsclient -t'
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -31,3 +35,9 @@ pyenv virtualenvwrapper
 
 export NVM_DIR="/Users/jasomyer/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export EDITOR=emacsclient
+export GOROOT=/usr/local/go
+export GOPATH=~/dev/go
+export PATH=$PATH:$GOROOT/bin
+export RUST_SRC_PATH=/Users/jasomyer/.rust/src

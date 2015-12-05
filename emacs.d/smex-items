@@ -1,0 +1,23 @@
+
+;; ----- smex-history -----
+(
+ kill-buffer
+ elpy-config
+ top-level
+ customize
+ eval-buffer
+ package-install
+ load-theme
+)
+
+;; ----- smex-data -----
+(
+ (dired-jump . 1)
+ (load-theme . 1)
+ (package-install . 1)
+ (eval-buffer . 1)
+ (customize . 3)
+ (top-level . 1)
+ (elpy-config . 1)
+ (kill-buffer . 3)
+)

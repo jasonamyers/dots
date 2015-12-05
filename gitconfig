@@ -11,6 +11,7 @@
     s = "status -su"
 	ctags = !.git/hooks/ctags
 	undo-commit = reset --soft HEAD^
+    ugh = !"git commit -a --amend --no-edit"
 [github]
 	user = jasonamyers
 [push]
