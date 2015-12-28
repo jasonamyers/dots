@@ -1,4 +1,5 @@
 #!/bin/bash
+
 echo -e "\n>> Installing liquidprompt"
 git clone https://github.com/nojhan/liquidprompt.git ~/liquidprompt
 
@@ -34,7 +35,7 @@ git submodule update
 cd ~
 
 echo -e "\n>> Cloning Emacs Config"
-git clone git@github.com:jasonamyers/prelude .emacs.d
+git clone git@github.com:jasonamyers/prelude ~/.emacs.d
 mkdir -p ~/Misc/emacs && cd ~/Misc/emacs
 git clone git@github.com:dominikh/go-mode.el.git
 cd ~
