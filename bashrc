@@ -33,11 +33,11 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 pyenv virtualenvwrapper
 
-export NVM_DIR="/Users/jasomyer/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export EDITOR=emacsclient
 export GOROOT=/usr/local/go
 export GOPATH=~/dev/go
 export PATH=$PATH:$GOROOT/bin
-export RUST_SRC_PATH=/Users/jasomyer/.rust/src
+export RUST_SRC_PATH=$HOME/.rust/src
